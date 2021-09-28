@@ -10,4 +10,13 @@ Bạch Đăng Tuấn
 
 Hà Thị Ngọc Anh
 
-### 
+## Nội dung công việc:
+
+### Bạch Đăng Tuấn
+- Khởi tạo repo cấu trúc thư mục source code
+
+
+### Đinh Văn Hữu Nghĩa
+
+
+### Hà Thị Ngọc Anh
