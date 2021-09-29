@@ -35,7 +35,7 @@ Clone code default về lần đầu tiên.
 Tạo branch cá nhân và dev => push code lên branch cá nhân => 3-4 ngày merge code 1 lần về branch master.
 => Test => Sau đó pull về nhánh làm tiếp => Push & Merge => Test => Release
 
-![anh](../image/git.png)
+![anh](./image/git.png)
 
 
 Merge code:
