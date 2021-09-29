@@ -1,1 +1,22 @@
+/* CSS FILE */
+/* 
+//////////////////////////////
+    Tất cả các thuộc tính có khoảng cách sử dụng pixel (px)
+    Thuộc tính màu sử dụng mã màu hex , rgba.
+    Fonts: Montserrat.
+/////////////////////////////
+*/
+/* ////////////////////// GLOBAL CSS /////////////////////// */
 
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

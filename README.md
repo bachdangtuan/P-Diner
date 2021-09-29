@@ -20,3 +20,13 @@ Hà Thị Ngọc Anh
 
 
 ### Hà Thị Ngọc Anh
+
+## Quy trình thực hiện:
+
+Clone code default về lần đầu tiên.
+Tạo branch cá nhân và dev => push code lên branch => 
+Merge code: 
+- Kiểm tra kĩ code sau đó merge.
+- Merge xong kiểm tra lại release
+- Thông báo đồng đội Pull code về làm tiếp. 
+Push => Merge => Pull
