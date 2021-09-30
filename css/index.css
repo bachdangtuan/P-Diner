@@ -1,17 +1,26 @@
 /* CSS FILE */
 /* 
-//////////////////////////////
-    Tất cả các thuộc tính có khoảng cách sử dụng pixel (px)
-    Thuộc tính màu sử dụng mã màu hex , rgba. 
-    Fonts: Montserrat.
-/////////////////////////////
-*/
-/* ////////////////////// GLOBAL CSS /////////////////////// */
-
+//////////////////////////////////////////////////////////////////
+//   Tất cả các thuộc tính có khoảng cách sử dụng pixel (px)  ////
+//    Thuộc tính màu sử dụng mã màu hex , rgba.                ///
+//    Fonts: Quicksand.                                       ////
+//////////////////////////////////////////////////////////////////
+                                     $$$$$$\  $$\           $$\                 $$\ 
+                                    $$  __$$\ $$ |          $$ |                $$ |
+ $$$$$$$\  $$$$$$$\  $$$$$$$\       $$ /  \__|$$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ |
+$$  _____|$$  _____|$$  _____|      $$ |$$$$\ $$ |$$  __$$\ $$  __$$\  \____$$\ $$ |
+$$ /      \$$$$$$\  \$$$$$$\        $$ |\_$$ |$$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |
+$$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ |
+\$$$$$$$\ $$$$$$$  |$$$$$$$  |      \$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |
+ \_______|\_______/ \_______/        \______/ \__| \______/ \_______/  \_______|\__| 
+ 
+ //////////////////////////////////////////////////////////////////
+ */
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    color: white;
 }
 
 body,html{
@@ -19,4 +28,25 @@ body,html{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+/* Style Font  */
+h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+}
+h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Pacifico', cursive;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p,span{
+    padding: 0;
+    margin: 0;
 }
