@@ -50,3 +50,82 @@ p,span{
     padding: 0;
     margin: 0;
 }
+/* BACKGROUND COLOR: #ff6600; */
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+/* DINER DELI */
+.Diner__deli{
+    background-image: url(../image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+.Diner__deli::before{
+    content: "";
+    background:rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+.Diner__container{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.Deli.title h3{
+    color: white;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+.Deli.title button{
+    /* margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    margin: 30px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 45px;
+}
+.Deli.title i{
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    transition: all .5s ease-in;
+}
+
+/* TRƯỚC KHI HOVER */
+.delibtn1.btn.btn-outline-secondary{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    transition: all .5s ease-in;
+}
+.delibtn2.btn.btn-outline-secondary{
+    background-color: #ff6600;;
+    color: white;
+    border: none;
+    transition: all .5s ease-in;
+}
+/* SAU KHI HOVER */
+.delibtn1.btn.btn-outline-secondary:hover{
+    background-color: white;
+    color: #ff6600;
+}
+.delibtn2.btn.btn-outline-secondary:hover{
+    opacity: 0.8;
+}
+.delibtn1.btn.btn-outline-secondary:hover i{
+    color:#ff6600;
+}
