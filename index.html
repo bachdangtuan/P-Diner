@@ -41,8 +41,8 @@
                 <a href="#" id="Dinner__logo">Diner</a>
             </div>
             <div class="Dinner__details d-flex">
-                <form class="form-inline my-2 my-lg-0 position-relative">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="form-inline my-2 my-lg-0 position-relative d-none d-lg-block">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search here..."id="Dinner__input">
                     <button class="my-2 my-sm-0 position-absolute bg-transparent border-0" type="submit" id="Dinner__search">
                         <i class="fa fa-search text-dark"></i>
                     </button>
@@ -50,12 +50,24 @@
                 <button class="icon__change__color">
                     <i class="gg-moon"></i>
                 </button>
-                <button class="icon__change__color">
-                    <i class="fa fa-bars"></i>
+                <button class="icon__change__color" >
+                    <i class="fa fa-bars" id="Dinner__bars" onclick="openNav()"></i>
                 </button>
             </div>
         </div>
     </div>
+        <div id="Diner__menu" class="Diner__overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close__menu">&times;</a>
+            <ul class="Dinner__navbar__content">
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">404</a>
+              <a href="#">Landing Page</a>
+              <a href="#">Contact</a>
+              <a href="#">Shot Codes</a>
+              <a href="#">Email</a>
+           </ul>
+        </div>
 </header>
 <!------------------------------------->
 <!-- CAROUSEL - Tuấn -->

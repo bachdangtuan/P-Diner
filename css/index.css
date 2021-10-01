@@ -54,7 +54,7 @@ p,span{
 
 /* HEADER CSSS */
 .Dinner__navbar{
-    z-index: 100;
+    z-index: 1;
     padding: 40px 0 20px 0;
 }
 .Diner__carousel{
@@ -75,7 +75,7 @@ p,span{
     border: none;
     background: none;
 }
-.icon__change__color i{
+.icon__change__color i:last-of-type {
     font-size: 30px;
 }
 .btn-style{
@@ -88,6 +88,10 @@ p,span{
     color: rgb(255, 255, 255);
     border-radius: 8px;
 }
+.form-control:focus,.form-control:active {
+    outline: none !important;
+    box-shadow: none;
+}
 .btn-style span{
     transition: 0.3s ease-in;
 }
@@ -98,4 +102,46 @@ p,span{
 }
 .btn-style:hover >span{
     color:#ff6600;
+}
+.Diner__overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    opacity: 0;
+    bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+    z-index: 1;
+}
+.Dinner__navbar__content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 30px;
+}
+.Dinner__navbar__content a:hover{
+    color:#ff6600 ;
+}
+.Diner__overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: block;
+    transition: 0.3s;
+} 
+.overlay-show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.4s, opacity 0.4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
