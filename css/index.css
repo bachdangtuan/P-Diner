@@ -17,12 +17,13 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
  //////////////////////////////////////////////////////////////////
  */
  @import url('https://css.gg/moon.css');
+ @import url('https://css.gg/sun.css');
  *{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: white;
-}
+ }   
 
 body,html{
     margin: 0;
@@ -35,6 +36,14 @@ h3{
     font-size: 54px;
     line-height: 64px;
     font-weight: 600;
+}
+h5{
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
 }
 h6{
     font-size: 20px;
@@ -50,6 +59,13 @@ a, a:hover{
 p,span{
     padding: 0;
     margin: 0;
+}
+ul{
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
 }
 
 /* HEADER CSSS */
@@ -124,7 +140,7 @@ p,span{
     margin-top: 30px;
 }
 .Dinner__navbar__content a:hover{
-    color:#ff6600 ;
+    color:#ff6600;
 }
 .Diner__overlay a {
     padding: 8px;
@@ -144,4 +160,61 @@ p,span{
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+/* FOOTER CSS */
+.Diner__footer{
+    background: black;
+}
+.Diner__header__logo a{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0;
+}
+.Diner__footer__social a{
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    background: white;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.Diner__Usefull a:hover, .Dinner__More a:hover,.footer__bottom__infor a:hover,.Diner__header__logo a:hover {
+    color: #ff6600;
+}
+.Diner__footer__social a:hover{
+    background:#ff6600;
+}
+.Diner__footer__social a:hover > i{
+    color: white;
+}
+.Diner__footer__social a > i{
+    color:#ff6600;
+}
+form input[type="email"]{
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+}
+.Diner__footer form > button{
+    border: 2px solid #ff6600;
+    background:#ff6600;
+}
+.Diner__footer form > button:hover{
+    color: white;
+    background:#b84f0a;
+    border: 2px solid #b84f0a;
+}
+.footer__bottom__infor ul li{
+    padding: 0px 20px;
+    margin-bottom: 0;
 }

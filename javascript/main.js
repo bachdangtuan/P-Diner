@@ -6,6 +6,18 @@ function dinerHeader() {
      document.getElementById("close__menu").style.cssText = "width: 45px;height: 45px;position: absolute;right: 40px;top: 40px;overflow: hidden;border: none;     display: flex;align-items: center;justify-content: center; background: #ff6600; color:white; border-radius: 8px;"
 }
 
+const moon = document.getElementById("change__theme__moon");
+const sun = document.getElementById("change__theme__sun")
+
+moon.addEventListener('click', function(){
+  sun.style.visibility="visible"
+  moon.style.visibility="hidden"
+})
+sun.addEventListener('click', function(){
+  moon.style.visibility="visible"
+  sun.style.visibility="hidden"
+})
+
 // function openNav() {
 //     document.getElementById("Diner__menu").style.display = "block";
 //     document.getElementById("Diner__menu").classList.remove("container");
