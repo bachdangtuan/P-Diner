@@ -16,7 +16,8 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
  
  //////////////////////////////////////////////////////////////////
  */
-*{
+ @import url('https://css.gg/moon.css');
+ *{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -42,11 +43,59 @@ h6{
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
 }
-a{
+a, a:hover{
     text-decoration: none;
     color: white;
 }
 p,span{
     padding: 0;
     margin: 0;
+}
+
+/* HEADER CSSS */
+.Dinner__navbar{
+    z-index: 100;
+    padding: 40px 0 20px 0;
+}
+.Diner__carousel{
+    background-image: linear-gradient(to right, #ff6600, rgb(5 3 0 / 20%)), url(../image/banner1.jpg);
+    background-size: cover;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+.Diner__carousel__details{
+    max-width: 600px;
+    text-align: left;
+    padding-top: 210px;
+}
+.icon__change__color{
+    padding-left: 15px;
+    border: none;
+    background: none;
+}
+.icon__change__color i{
+    font-size: 30px;
+}
+.btn-style{
+    padding: 12px 45px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    background: transparent;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.btn-style span{
+    transition: 0.3s ease-in;
+}
+.btn-style:hover{
+    color:#ff6600;
+    background: white;
+    border: 2px solid white;
+}
+.btn-style:hover >span{
+    color:#ff6600;
 }
