@@ -68,7 +68,7 @@ h6{
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
 }
-a:hover{
+,a:hover{
     text-decoration: none;
     color: white;
 }
