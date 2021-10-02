@@ -16,9 +16,12 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
  
  //////////////////////////////////////////////////////////////////
  */
+
+
+ 
  @import url('https://css.gg/moon.css');
  @import url('https://css.gg/sun.css');
- *{
+*{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
