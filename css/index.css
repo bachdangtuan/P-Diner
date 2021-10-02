@@ -29,6 +29,16 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
     font-weight: 500;
     color: white;
   
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 }
 body,html{
@@ -58,6 +68,15 @@ h6{
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
 }
+
+
+
+
+
+
+
+
+
 a, a:hover{
     text-decoration: none;
     color: white;
