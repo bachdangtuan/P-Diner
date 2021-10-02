@@ -68,10 +68,6 @@ h6{
     letter-spacing: 1px;
     font-family: 'Pacifico', cursive;
 }
-a,a:hover{
-    text-decoration: none;
-    color: white;
-}
 p,span{
     padding: 0;
     margin: 0;
