@@ -27,7 +27,7 @@ body,html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /* Style Font  */
 h3{
@@ -49,4 +49,127 @@ a{
 p,span{
     padding: 0;
     margin: 0;
+}
+/* BACKGROUND COLOR: #ff6600; */
+
+.container{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+/* DINER DELI */
+.Diner__deli{
+    background-image: url(../image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+.Diner__deli::before{
+    content: "";
+    background:rgb(16 15 19 / 66%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+.deli.title{
+    width: 60%;
+    margin: auto;
+}
+.deli.title h3{
+    color: white;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+.deli.title button{
+    margin: 30px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 45px;
+}
+.deli.title i{
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    transition: all .5s ease-in;
+}
+
+/* TRƯỚC KHI HOVER */
+.delibtn1.btn.btn-outline-secondary{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    transition: all .5s ease-in;
+}
+.delibtn2.btn.btn-outline-secondary{
+    background-color: #ff6600;;
+    color: white;
+    border: none;
+    transition: all .5s ease-in;
+}
+/* SAU KHI HOVER */
+.delibtn1.btn.btn-outline-secondary:hover{
+    background-color: white;
+    color: #ff6600;
+}
+.delibtn2.btn.btn-outline-secondary:hover{
+    opacity: 0.8;
+}
+.delibtn1.btn.btn-outline-secondary:hover i{
+    color:#ff6600;
+}
+/* COUNTUP */
+.deli.countup{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+    bottom: -33%;
+}
+.deli.countup .countup__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    background-color: white;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    transition: all .5s;
+}
+.deli.countup .countup__item:hover{
+    transform: translateY(-5px);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+.deli.countup .countup__item i{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    background-color: #ff6600;
+    border-radius: 50%;
+}
+.deli.countup .countup__item span{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.deli.countup .countup__item p{
+    color: black;
+    font-weight: 400;
 }
