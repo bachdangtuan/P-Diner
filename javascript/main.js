@@ -38,3 +38,10 @@ button.addEventListener('click', function() {
 closeBtn.addEventListener('click', function() {
   overlay.classList.remove('overlay-show');
 })
+
+$('.counter').countUp({
+      'time': 2000,
+      'delay': 10
+});
+    
+
