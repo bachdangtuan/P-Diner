@@ -439,22 +439,54 @@ ul li {
 .Diner__post{
     background-color: #f7f7f7;
 }
-.Diner__post .container .post__item{
+.post__item{
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
-.post__item .card{
+.card{
     width: 32%;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+}
+.card__info{
+    position: relative;
+}
+.card__info .card__btn{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.card__info .card__btn button{
+    padding: 0px 20px;
+    border-radius: 30px;
+    background-color: #ff6600;
+    border: none;
+}
+.card .card__info span{
+    opacity: 1;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+.card .card__info span::before{
+    content:"\f017";
+    color: white;
+    margin-right: 5px;
 }
 .Diner__post .card-body h5{
     color: #232121;
     display: block;
     font-size: 24px;
     line-height: 34px;
-    font-weight: 600;
-    margin-top: 25px;
+    font-weight: 700;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 .Diner__post .card-body p{
@@ -493,7 +525,18 @@ ul li {
     font-weight: 700;
     margin-left: 10px;
     color: #232121;
-    letter-spacing: .5px;
+    font-size: 14px;
+}
+.Diner__post .card-body.btm .card__link a{
+    font-weight: 900;
+    font-size: 14px;
+}
+.Diner__post .card-body.btm .card__link a:hover{
+    color:#ff6600;
+}
+.Diner__post .card-body.btm .card__link i::before{
+    content: "\f054";
+    color: black;
 }
 /* FOOTER CSS */
 .Diner__footer{
