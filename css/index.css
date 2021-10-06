@@ -297,9 +297,9 @@ ul li {
     position: absolute;
     bottom: -10px;
     left: auto;
+    width: 100%;
+    height: 100%;
 }
-
-
 .new__item{
     text-align: left;
     border: 1px solid var(--bg-grey);
@@ -546,4 +546,13 @@ form input[type="email"]{
 }
 .Dinner__default__breadcrumb{
     padding-top:200px;
+}
+
+
+
+/* KEYFRAME */
+@keyframes lightMove{
+    100%{
+        left: 100%;
+    }
 }
