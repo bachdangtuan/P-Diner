@@ -43,5 +43,15 @@ $('.counter').countUp({
       'time': 2000,
       'delay': 10
 });
-    
+
+// JS SLICK
+$(document).ready(function(){
+  $('.testimonial__content').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots:true,
+    arrows:false,
+  });
+});
 

@@ -538,6 +538,75 @@ ul li {
     content: "\f054";
     color: black;
 }
+/* TESTIMONIALS */
+.testimonial__content{
+    width: 100%;
+    height: 450px;
+    margin: auto;
+}
+
+.testimonial__item.slick-slide{
+    margin-right: 150px;
+    margin-left: 150px;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+}
+.testimonial__item img{
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;  
+}
+.testimonial__item p{
+    margin-top: 10px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+.testimonial__quote{
+    margin-top: 20px;
+}
+.testimonial__quote q::before{
+    font-size: 50px;
+    color: #ff6600;
+    display: block;
+    font-family: initial;
+}
+.testimonial__quote q{
+    font-size: 24px;
+    line-height: 36px;
+    color: #232121;
+    font-weight: 600;
+}
+.testimonial__info h3{
+    margin-top: 20px ;
+    font-weight: 600;
+    font-size: 20px;
+    color: #232121;
+    line-height: 20px;
+}
+.testimonial__info p{
+    font-size: 18px;
+    font-style: normal;
+    margin-bottom: 0;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+.testimonial__content .slick-dots button::before{
+    font-size: 10px;
+}
+.testimonial__content .slick-dots button:hover{
+    color:#ff6600;
+}
+.testimonial__content .slick-dots .slick-active button::before{
+    font-size: 10px;
+    color:#ff6600;
+}
 /* FOOTER CSS */
 .Diner__footer{
     background: black;
