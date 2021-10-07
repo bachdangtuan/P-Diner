@@ -128,7 +128,8 @@
                             <h6>More than 3000 Restaurants</h6>
                             <h3>Book a table easly at the best price</h3>
                         </div>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet
+                            mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
                         <div class="row pt-5">
                             <div class="col-6">
                                 <i class="fa fa-thumbs-up"></i>
@@ -304,7 +305,7 @@
             </div>
         </div>
     </section>
-    
+
     <!------------------------------------->
     <!-- Deliciousness - Nghĩa -->
     <section class="Diner__deli py-5">
@@ -344,12 +345,33 @@
     <div class="deli video">
         <div class="container py-5">
             <div class="video__banner">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qtUzkdqL42U"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <button type="button" class="btn btn-primary video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/305185528" data-target="#myModal">
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+            <!-- MODAL -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- CLOSE BUTTON VIDEO -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <!-- KHUNG VIDEO KHI CLICK BUTTON -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                allow=""></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
+    </div>
     </div>
     <!------------------------------------->
     <!-- Blog Posts - Nghĩa -->
@@ -444,51 +466,51 @@
                 <h3>What People Say</h3>
             </div>
             <div class="testimonial__content">
-                    <div class="testimonial__item">
-                        <img src="./image/team1.jpg" alt="slick1">
-                        <blockquote class="testimonial__quote">
-                            <q>
-                                OMG! I cannot believe. It's Awesome
-                            </q>
-                        </blockquote>
-                        <p>My new site is so much faster and easier to work with than my old site. They are here to
-                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                            Pellen tesque libero ut justo, ultrices in ligula.</p>
-                        <div class="testimonial__info">
-                            <h3>Johnson william</h3>
-                            <p>Customer</p>
-                        </div>
+                <div class="testimonial__item">
+                    <img src="./image/team1.jpg" alt="slick1">
+                    <blockquote class="testimonial__quote">
+                        <q>
+                            OMG! I cannot believe. It's Awesome
+                        </q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="testimonial__info">
+                        <h3>Johnson william</h3>
+                        <p>Customer</p>
                     </div>
-                    <div class="testimonial__item">
-                        <img src="./image/team2.jpg" alt="slick2">
-                        <blockquote class="testimonial__quote">
-                            <q>
-                                Simply the best. Better than all the rest.
-                            </q>
-                        </blockquote>
-                        <p>My new site is so much faster and easier to work with than my old site. They are here to
-                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                            Pellen tesque libero ut justo, ultrices in ligula.</p>
-                        <div class="testimonial__info">
-                            <h3>Alexander sakura</h3>
-                            <p>Customer</p>
-                        </div>
+                </div>
+                <div class="testimonial__item">
+                    <img src="./image/team2.jpg" alt="slick2">
+                    <blockquote class="testimonial__quote">
+                        <q>
+                            Simply the best. Better than all the rest.
+                        </q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="testimonial__info">
+                        <h3>Alexander sakura</h3>
+                        <p>Customer</p>
                     </div>
-                    <div class="testimonial__item">
-                        <img src="./image/team3.jpg" alt="slick3">
-                        <blockquote class="testimonial__quote">
-                            <q>
-                                OMG! I cannot believe. It's Awesome
-                            </q>
-                        </blockquote>
-                        <p>My new site is so much faster and easier to work with than my old site. They are here to
-                            help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
-                            Pellen tesque libero ut justo, ultrices in ligula.</p>
-                        <div class="testimonial__info">
-                            <h3>John wilson</h3>
-                            <p>Customer</p>
-                        </div>
+                </div>
+                <div class="testimonial__item">
+                    <img src="./image/team3.jpg" alt="slick3">
+                    <blockquote class="testimonial__quote">
+                        <q>
+                            OMG! I cannot believe. It's Awesome
+                        </q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                        Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="testimonial__info">
+                        <h3>John wilson</h3>
+                        <p>Customer</p>
                     </div>
+                </div>
             </div>
         </div>
     </section>
