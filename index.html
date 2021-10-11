@@ -309,39 +309,54 @@
     <!------------------------------------->
     <!-- Deliciousness - Nghĩa -->
     <section class="Diner__deli py-5">
-        <div class="container">
-            <div class="deli title">
-                <h3>Deliciousness jumping into the mouth.</h3>
-                <button type="button" class="delibtn1 btn btn-outline-secondary">Read More <i
-                        class="fa fa-angle-right"></i></button>
-                <button type="button" class="delibtn2 btn btn-outline-secondary">Contact Us <i
-                        class="fa fa-angle-right"></i></button>
-            </div>
-            <div class="deli countup">
-                <div class="countup__item">
-                    <i class="fa fa-building"></i>
-                    <span class="counter">15,100</span>
-                    <p>Branches</p>
-                </div>
-                <div class="countup__item">
-                    <i class="fa fa-utensils"></i>
-                    <span class="counter">19,256</span>
-                    <p>Food Items</p>
-                </div>
-                <div class="countup__item">
-                    <i class="fa fa-user-friends"></i>
-                    <span class="counter">12,100</span>
-                    <p>Chefs</p>
-                </div>
-                <div class="countup__item">
-                    <i class="fa fa-smile"></i>
-                    <span class="counter">2,560</span>
-                    <p>Happy Customers</p>
+        <div class="container pt-lg-2 pb-lg-4 py-4">
+            <div class="deli title text-center py-lg-5">
+                <h3 class="px-lg-5">Deliciousness jumping into the mouth.</h3>
+                <div class="deli__button pb-lg-5">
+                    <button type="button" class="delibtn1 btn btn-outline-secondary mt-4 mr-lg-4 mr-2">Read More <i
+                            class="fa fa-angle-right"></i></button>
+                    <button type="button" class="delibtn2 btn btn-outline-secondary mt-4">Contact Us <i
+                            class="fa fa-angle-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Video(chưa đè banner vs button ở trên được) - Nghĩa-->
+    <!-- COUNTUP -->
+    <section class="deli__countup py-md-5 py-lg-0 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 countup__bg">
+                    <div class="countup__item">
+                        <i class="fa fa-building"></i>
+                        <span class="counter">15,100</span>
+                        <p>Branches</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 countup__bg">
+                    <div class="countup__item">
+                        <i class="fa fa-utensils"></i>
+                        <span class="counter">19,256</span>
+                        <p>Food Items</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 countup__bg">
+                    <div class="countup__item">
+                        <i class="fa fa-user-friends"></i>
+                        <span class="counter">12,100</span>
+                        <p>Chefs</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 countup__bg">
+                    <div class="countup__item">
+                        <i class="fa fa-smile"></i>
+                        <span class="counter">2,560</span>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video - Nghĩa-->
     <div class="deli video">
         <div class="container py-5">
             <div class="video__banner">
@@ -352,24 +367,24 @@
             </div>
             <!-- MODAL -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- CLOSE BUTTON VIDEO -->
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- 16:9 aspect ratio -->
-                        <!-- KHUNG VIDEO KHI CLICK BUTTON -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                                allow=""></iframe>
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- CLOSE BUTTON VIDEO -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- 16:9 aspect ratio -->
+                            <!-- KHUNG VIDEO KHI CLICK BUTTON -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                                    allow=""></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
     </div>
@@ -381,8 +396,8 @@
                 <h6>Latest Posts</h6>
                 <h3>Blog Posts</h3>
             </div>
-            <div class="post__item">
-                <div class="card">
+            <div class="row post__item">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 card">
                     <div class="card__info">
                         <img src="./image/banner1.jpg" class="card-img-top" alt="postimg1">
                         <div class="card__btn">
@@ -390,12 +405,12 @@
                             <span class="fa fa-clock">10 Min Cook</span>
                         </div>
                     </div>
-                    <div class="card-body top">
+                    <div class="card-body top p-0">
                         <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
                         </p>
                     </div>
-                    <div class="card-body btm">
+                    <div class="card-body btm px-1">
                         <div class="card__info">
                             <a href="#" class="card-link"><img src="./image/team1.jpg" alt=""></a>
                             <p>Rashed Kabir</p>
@@ -406,7 +421,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 card">
                     <div class="card__info">
                         <img src="./image/banner3.jpg" class="card-img-top" alt="postimg1">
                         <div class="card__btn">
@@ -414,12 +429,12 @@
                             <span class="fa fa-clock">10 Min Cook</span>
                         </div>
                     </div>
-                    <div class="card-body top">
+                    <div class="card-body top p-0">
                         <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
                         </p>
                     </div>
-                    <div class="card-body btm">
+                    <div class="card-body btm px-1">
                         <div class="card__info">
                             <a href="#" class="card-link"><img src="./image/team2.jpg" alt=""></a>
                             <p>Jannatul Ferdous</p>
@@ -430,7 +445,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 py-md-3 card">
                     <div class="card__info">
                         <img src="./image/banner1.jpg" class="card-img-top" alt="postimg1">
                         <div class="card__btn">
@@ -438,12 +453,12 @@
                             <span class="fa fa-clock">10 Min Cook</span>
                         </div>
                     </div>
-                    <div class="card-body top">
+                    <div class="card-body top p-0">
                         <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
                         </p>
                     </div>
-                    <div class="card-body btm">
+                    <div class="card-body btm px-1">
                         <div class="card__info">
                             <a href="#" class="card-link"><img src="./image/team3.jpg" alt=""></a>
                             <p>Rashed Kabir</p>
@@ -459,9 +474,9 @@
     </section>
     <!------------------------------------->
     <!--Testimonials - Nghĩa -->
-    <section class="Diner__testimonial">
-        <div class="container py-5">
-            <div class="title">
+    <section class="Diner__testimonial py-5">
+        <div class="container py-md-3 py-lg-5">
+            <div class="title mb-5">
                 <h6>Testimonials</h6>
                 <h3>What People Say</h3>
             </div>
@@ -477,7 +492,7 @@
                         help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                         Pellen tesque libero ut justo, ultrices in ligula.</p>
                     <div class="testimonial__info">
-                        <h3>Johnson william</h3>
+                        <h3 class="mt-md-3">Johnson william</h3>
                         <p>Customer</p>
                     </div>
                 </div>
@@ -492,7 +507,7 @@
                         help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                         Pellen tesque libero ut justo, ultrices in ligula.</p>
                     <div class="testimonial__info">
-                        <h3>Alexander sakura</h3>
+                        <h3 class="mt-md-3">Alexander sakura</h3>
                         <p>Customer</p>
                     </div>
                 </div>
@@ -507,7 +522,7 @@
                         help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
                         Pellen tesque libero ut justo, ultrices in ligula.</p>
                     <div class="testimonial__info">
-                        <h3>John wilson</h3>
+                        <h3 class="mt-md-3">John wilson</h3>
                         <p>Customer</p>
                     </div>
                 </div>
