@@ -7,15 +7,19 @@ function dinerHeader() {
 }
 
 const moon = document.getElementById("change__theme__moon");
-const sun = document.getElementById("change__theme__sun")
+const sun = document.getElementById("change__theme__sun");
 
 moon.addEventListener('click', function(){
-  sun.style.visibility="visible"
-  moon.style.visibility="hidden"
+    sun.style.visibility="visible";
+    moon.style.visibility="hidden";
+    document.getElementById("dinerAbout").className = "Diner__about";
+    document.getElementById("dinerNew").className = "Diner__new";
 })
 sun.addEventListener('click', function(){
-  moon.style.visibility="visible"
-  sun.style.visibility="hidden"
+    moon.style.visibility="visible";
+    sun.style.visibility="hidden";
+    document.getElementById("dinerAbout").className = "Diner__about__dark";
+    document.getElementById("dinerNew").className = "Diner__new__dark";
 })
 
 // function openNav() {

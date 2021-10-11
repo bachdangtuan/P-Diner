@@ -17,30 +17,15 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
  //////////////////////////////////////////////////////////////////
  */
 
-
-
  @import url('https://css.gg/moon.css');
  @import url('https://css.gg/sun.css');
-
-
-:root{
-    --primary-color: #ff6600;
-    --secondary-color: #ffc600;
-    --heading-color: #232121;
-    --font-color:rgba(22, 28, 45, 0.7);
-    --bg-color: #fff;
-    --bg-grey: #f7f7f7;
-    --bg-light: rgba(130, 115, 252, .05);
-}
 
 *{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: white;
-    
 }   
-
     
 body,html{
     margin: 0;
@@ -200,31 +185,29 @@ ul li {
 
 /* ABOUT US CSS */
 .Diner__about{
-    background-color: var(--bg-color);
+    background-color: #fff;
 }
-.Diner__about h6{
-    color: var(--primary-color);
-}
-.Diner__about h3{
-    color: var(--heading-color);
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600px;
+.Diner__about .title{
+    text-align: left;
 }
 .Diner__about p{
-    color: var(--font-color);
+    color: rgba(22, 28, 45, 0.7);
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
 }
 .about__more{
-    background-color: var(--primary-color);
+    background-color: #ff6600;
+    text-align: left;
 }
 .about__img{
     background-image: url(../image/banner3.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    display: block;
+    width: 100%;
+    min-height: 300px;
 }
 .about__img::before{
     content: "";
@@ -240,42 +223,60 @@ ul li {
     color: #fff;
 }
 .about__text i{
-    color: var(--primary-color);
-    background-color: var(--bg-color);
+    color: #ff6600;
+    background-color: #fff;
     display: block;
     width: 70px;
     height: 70px;
     text-align: center;
     line-height: 70px;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 22px;
+    transition: all 1s;
+}
+.about__icon:hover i{
+    color: #ffc600;
 }
 .about__text a{
-    color: var(--heading-color);
+    color: #232121;
     font-size: 20px;
     font-weight: 700;
     display: block;
     padding: 15px 0;
+    opacity: 1;
+    transition: all 1s;
 }
-.about__text p{
+.about__text a:hover{
+    opacity: 0.9;
+}
+.about__more .about__text p{
     color: #ffdfc9;
 }
+
+/* Diner__about__dark  */
+.Diner__about__dark{
+    background-color:#232220 !important;
+}
+.Diner__about__dark .title{
+    text-align: left;
+}
+.Diner__about__dark h3{
+    color: #eeeeee;
+}
+.Diner__about__dark p{
+    color: #C2D0E1;
+}
+.Diner__about__dark a{
+    color: #eeeeee;
+}
+
 
 /* WHAT'S NEW */
 .Diner__new{
     text-align: center;
 }
 .new__menu{
-    background-color: var(--bg-grey);
-}
-.new__menu h6{
-    color: var(--primary-color);
-}
-.new__menu h3{
-    color: var(--heading-color);
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600px;
+    background-color: #f7f7f7;
 }
 .new__img{
     position: relative;
@@ -305,7 +306,7 @@ ul li {
     font-weight: 700;
 }
 .new__info p{
-    color: var(--secondary-color);
+    color: #ffc600;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -313,20 +314,23 @@ ul li {
 .new__info{
     text-align: left;
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: auto;
 }
 .new__item{
     text-align: left;
-    border: 1px solid var(--bg-grey);
+    border: 1px solid #eee;
+    padding: 40px;
     border-radius: 5px;
     box-shadow: 0 25px 80px 0px rgba(0, 0, 0, 0.03);
-    overflow: hidden;
     transition: all 1s;
 }
+.new__item:hover{
+    box-shadow: 0 25px 110px 10px rgba(0, 0, 0, 0.05);
+}
 .new__item i{
-    background-color: var(--bg-light);
-    color: var(--primary-color);
+    background-color: rgba(130, 115, 252, .05);
+    color: #ff6600;
     border-radius: 5px;
     font-size: 25px;
     line-height: 70px;
@@ -335,36 +339,55 @@ ul li {
     text-align: center;
     transition: all 1s;
 }
+.new__item:hover i{
+    background-color: #ff6600;
+    color: #fff;
+}
 .new__item h4{
-    color: var(--heading-color);
+    color: #232121;
     font-size: 24px;
     font-weight: 700;
     padding-top: 5px;
     cursor: pointer;
 }
 .new__item h4:hover{
-    color: var(--primary-color);
+    color: #ff6600;
 }
 .new__item p{
-    color: var(--font-color);
+    color: rgba(22, 28, 45, 0.7);
     font-size: 18px;
     font-weight: 400;
     word-spacing: 1.5px;
 }
-.new__item:hover i{
-    background-color: var(--primary-color);
-    color: var(--bg-color);
+.new__icon{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    
 }
-.new__item:hover{
-    box-shadow: 0 25px 110px 10px rgba(0, 0, 0, 0.05);
+/* Diner__new__dark */
+.Diner__new__dark .new__menu{
+    background-color: #282828 !important;
 }
-
-
-
-
-
-
-
+.Diner__new__dark .new__service{
+    background-color: #232220 !important;
+}
+.Diner__new__dark .new__menu h3, .Diner__new__dark .new__service h4{
+    color: #eeeeee;
+}
+.Diner__new__dark .new__service p{
+    color: #c2d0da;
+}
+.Diner__new__dark .new__item{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.Diner__new__dark .new__item i{
+    background-color: #282828;
+}
+.Diner__new__dark .new__item:hover i{
+    background-color: #ff6600;
+    color: #fff;
+}
 
 
 
@@ -521,13 +544,13 @@ ul li {
 }
 .video__banner .btn i{
     font-size: 20px;
-    color: var(--primary-color);
+    color: #ff6600;
     transition: all .5s;
     border: none;
 }
 .video__banner .btn:hover{
     transform: scale(1.2);
-    background: var(--primary-color);
+    background: #ff6600;
     border: transparent;
     color: #fff
 }
@@ -785,6 +808,30 @@ form input[type="email"]{
     margin-bottom: 0;
 }
 
+/* BACK TO TOP */
+.backToTop{
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 
 
 /* 404 PAGE CSS */
@@ -821,6 +868,13 @@ form input[type="email"]{
   }
 
 /* RESPONSIVE */
+
+@media screen and (max-width:1080px){
+    .title h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
 @media screen and (max-width:992px){
     .Diner__deli{
         max-height: 478px;
@@ -943,3 +997,17 @@ form input[type="email"]{
         margin-top: 20px;
     }
 }
+  /* RESPONSIVE */
+
+@media screen and (max-width:576px){
+    .title h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .title h6{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+  
