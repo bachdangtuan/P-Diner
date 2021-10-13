@@ -891,6 +891,39 @@ form input[type="email"]{
     padding: 0px 20px;
     margin-bottom: 0;
 }
+/* FOOTER DARK */
+.Diner__footer__dark{
+    background-color:black;
+}
+.Diner__footer__dark .Diner__logo__text p{
+    color:#a5a2a1;
+}
+.Diner__footer__dark .Diner__footer__social a{
+    background-color: #282828;
+} 
+.Diner__footer__dark .Diner__Usefull li a{
+    color:#a5a2a1;
+}
+.Diner__footer__dark .Dinner__More li a{
+    color:#a5a2a1;
+}
+.Diner__footer__dark .Dinner__Subscribe p{
+    color:#a5a2a1;
+}
+.Diner__footer__dark form input{
+    background-color:#232220;
+    color:#c2d0da;
+}
+.Diner__footer__dark form button{
+    background-color:#ff6600;
+    border: none;
+}
+.Diner__footer__dark .copyright-text{
+    color: #ddd;
+}
+.Diner__footer__dark .footer__bottom__infor a{
+    color: #ddd;
+}
 
 /* BACK TO TOP */
 .backToTop{
@@ -988,6 +1021,9 @@ form input[type="email"]{
         align-items: center;
         text-align: center;
     }
+    .Diner__footer__social{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -1008,8 +1044,8 @@ form input[type="email"]{
     .deli__countup{
         margin-top: 0px;
     }
-}
 
+}
 @media screen and (max-width:576px) {
     .title h3{
         font-size: 30px;
@@ -1031,6 +1067,9 @@ form input[type="email"]{
         width: 100%;
         height: 100%;
         margin: auto;
+    }
+    .footer__top .col-6{
+        padding:15px 15px;
     }
 
 }
@@ -1063,5 +1102,8 @@ form input[type="email"]{
         font-size: 30px;
         font-weight: 600;
         margin-top: 20px;
+    }
+    .footer__bottom__infor ul{
+        justify-content: center;
     }
 }

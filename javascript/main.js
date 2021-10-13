@@ -18,6 +18,7 @@ moon.addEventListener('click', function(){
     document.getElementById("deliVideo").className = "deli__video";
     document.getElementById("dinerPost").className = "Diner__post";
     document.getElementById("testDark").className = "Diner__testimonial";
+    document.getElementById("dinerFooter").className = "Diner__footer";
 })
 sun.addEventListener('click', function(){
     moon.style.visibility="visible";
@@ -28,6 +29,7 @@ sun.addEventListener('click', function(){
     document.getElementById("deliVideo").className ="deli__video__dark";
     document.getElementById("dinerPost").className = "Diner__post__dark";
     document.getElementById("testDark").className = "Diner__testimonial__dark";
+    document.getElementById("dinerFooter").className = "Diner__footer__dark";
 })
 
 // function openNav() {
