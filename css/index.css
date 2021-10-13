@@ -409,7 +409,7 @@ ul li {
     z-index: -1;
 }
 .deli.title{
-    width: 700px;
+    width: 100%;
     margin: auto;
 }
 .deli.title h3{
@@ -417,7 +417,6 @@ ul li {
     font-size: 45px;
     line-height: 55px;
     font-weight: 600;
-    max-width: 800px;
 }
 .deli.title button{
     font-size: 16px;
@@ -503,11 +502,21 @@ ul li {
     position: relative;
     z-index: 1;
     background-color:#282828 ;
+    
 }
 .deli__countup__dark .countup__item{
     background-color:#282828 !important;
     border: 1px solid #282828;
-    margin-top: -75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    transition: all .5s;
+    margin-top:-75px;
 }
 .deli__countup__dark .countup__item span{
     color: white;
@@ -725,12 +734,9 @@ ul li {
     color: white;
 }
 /* TESTIMONIALS */
-.testimonial__content{
-    width: 100%;
-    height: 450px;
-    margin: auto;
+.testimonial__content .slick-dots{
+    bottom: -50px;
 }
-
 .testimonial__item.slick-slide{
     margin-right: 150px;
     margin-left: 150px;
@@ -796,6 +802,7 @@ ul li {
 /* TESTIMONIALS DARK */
 .Diner__testimonial__dark{
     background-color:#282828 !important;
+    padding: 50px 0px;
 }  
 .Diner__testimonial__dark .title h3{
     color: white;
@@ -951,11 +958,11 @@ form input[type="email"]{
         font-size: 32px;
         line-height: 40px;
     }
+    .deli__countup__dark .countup__item{
+        margin-top: -50px;
+    }
 }
 @media screen and (max-width:992px){
-    .Diner__deli{
-        max-height: 478px;
-    }
     .deli.title h3{
         color: white;
         font-size: 40px;
@@ -965,6 +972,9 @@ form input[type="email"]{
         max-width: 100%;
     }
     .deli__countup{
+        margin-top: 0px;
+    }
+    .deli__countup__dark .countup__item{
         margin-top: 0px;
     }
     .testimonial__item.slick-slide{
@@ -978,24 +988,9 @@ form input[type="email"]{
         align-items: center;
         text-align: center;
     }
-    .testimonial__content{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-    .testimonial__content .slick-dots{
-        bottom: -65px;
-    }
 }
 
 @media screen and (max-width:768px){
-    .Diner__deli{
-        max-height: 100%;
-    }
-    .deli.title{
-        max-width: 100%;
-        margin: auto;
-    }
     .deli.title h3{
         color: white;
         font-size: 40px;
@@ -1012,14 +1007,6 @@ form input[type="email"]{
     }
     .deli__countup{
         margin-top: 0px;
-    }
-    .testimonial__content{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-    .testimonial__content .slick-dots{
-        bottom: -65px;
     }
 }
 
@@ -1045,16 +1032,9 @@ form input[type="email"]{
         height: 100%;
         margin: auto;
     }
-    .testimonial__content .slick-dots{
-        bottom: -65px;
-    }
+
 }
 @media screen and (max-width:480px) {
-    .testimonial__content{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
     .deli.title button{
         margin: 0px 0px;
         font-size: 16px;
@@ -1072,9 +1052,6 @@ form input[type="email"]{
         padding: 0 0px;
         max-width: 100%;
     }
-    .Diner__deli{
-        max-height: 700px;
-    }
     .deli.title button{
         margin: 5px 10px;
         font-size: 16px;
@@ -1086,10 +1063,5 @@ form input[type="email"]{
         font-size: 30px;
         font-weight: 600;
         margin-top: 20px;
-    }
-    .testimonial__content{
-        width: 100%;
-        height: 100%;
-        margin: auto;
     }
 }
