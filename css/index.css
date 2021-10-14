@@ -47,13 +47,6 @@ h5{
     position: relative;
     color: #fff;
 }
-h6{
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-family: 'Pacifico', cursive;
-}
 a, a:hover{
     text-decoration: none;
     color: white;
@@ -849,12 +842,6 @@ form input[type="email"]{
 
 
 
-/* KEYFRAME */
-@keyframes lightMove{
-    100%{
-        left: 100%;
-    }
-}
 
 /* RIPPLE ANIMATION */
 @keyframes ripple {
@@ -868,7 +855,6 @@ form input[type="email"]{
   }
 
 /* RESPONSIVE */
-
 @media screen and (max-width:1080px){
     .title h3{
         font-size: 32px;
@@ -947,6 +933,14 @@ form input[type="email"]{
 }
 
 @media screen and (max-width:576px) {
+    .title h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .title h6{
+        font-size: 18px;
+        line-height: 20px;
+    }
     .deli.title h3{
         color: white;
         font-size: 35px;
@@ -997,17 +991,6 @@ form input[type="email"]{
         margin-top: 20px;
     }
 }
-  /* RESPONSIVE */
 
-@media screen and (max-width:576px){
-    .title h3{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .title h6{
-        font-size: 18px;
-        line-height: 20px;
-    }
-}
 
   
