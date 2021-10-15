@@ -49,26 +49,28 @@
     <!-- HEADER - Tuấn -->
     <header class="Diner__header">
         <div class="container p-0">
-            <div class="Dinner__navbar container d-flex align-items-center justify-content-between position-absolute">
+            <div class="Dinner__navbar container d-flex align-items-center justify-content-between position-absolute px-3">
                 <div class="Diner__header__logo">
                     <a href="#" id="Dinner__logo">Diner</a>
                 </div>
-                <div class="Dinner__details d-flex">
-                    <form class="form-inline my-2 my-lg-0 position-relative d-none d-lg-block">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search here..."
-                            id="Dinner__input">
-                        <button class="my-2 my-sm-0 position-absolute bg-transparent border-0" type="submit"
-                            id="Dinner__search">
-                            <i class="fa fa-search text-dark"></i>
+                <div class="Dinner__details">
+                    <div class="d-flex">
+                        <form class="form-inline my-2 my-lg-0 position-relative d-none d-sm-block">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..."
+                                id="Dinner__input">
+                            <button class="my-2 my-sm-0 position-absolute bg-transparent border-0" type="submit"
+                                id="Dinner__search">
+                                <i class="fa fa-search text-dark"></i>
+                            </button>
+                        </form>
+                        <button class="icon__change__color">
+                            <i class="gg-moon" id="change__theme__moon" style="visibility: hidden; position: absolute;"></i>
+                            <i class="gg-sun" id="change__theme__sun"></i>
                         </button>
-                    </form>
-                    <button class="icon__change__color">
-                        <i class="gg-moon" id="change__theme__moon" style="visibility: hidden; position: absolute;"></i>
-                        <i class="gg-sun" id="change__theme__sun"></i>
-                    </button>
-                    <button class="icon__change__color">
-                        <i class="fa fa-bars" id="Dinner__bars" onclick="openNav()"></i>
-                    </button>
+                        <button class="icon__change__color">
+                            <i class="fa fa-bars" id="Dinner__bars" onclick="openNav()"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,8 +91,8 @@
     <!-- CAROUSEL - Tuấn -->
     <section class="Diner__carousel position-relative" id="carouselDark">
         <div class="container p-0">
-            <div class="Diner__carousel__details">
-                <h3>The Only Thing We Love More Than Food Is You!</h3>
+            <div class="Diner__carousel__details px-3">
+                <h3 class="pb-4">The Only Thing We Love More Than Food Is You!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur
                     illum facere.</p>
                 <a class="btn btn-light mt-sm-5 mt-4 mr-2 btn-style" href="about.html">
@@ -102,7 +104,7 @@
     <!-- ABOUT US - Anh -->
     <section class="Diner__about" id="dinerAbout">
         <div class="container py-5">
-            <div class="row py-5">
+            <div class="row py-md-5">
                 <div class="title col-lg-5 mb-4">
                     <h6>About us</h6>
                     <h3>We found our creative space that is open for you.</h3>
@@ -152,7 +154,7 @@
     <!-- WHAT's NEW- Anh -->
     <section class="Diner__new" id="dinerNew">
         <div class="new__menu py-5">
-            <div class="container py-4 py-md-5">
+            <div class="container py-2 py-md-5">
                 <div class="title">
                     <h6>What's New</h6>
                     <h3>Popular Categories</h3>
@@ -215,16 +217,16 @@
                 </div>
             </div>
         </div>
-        <div class="new__service py-4 py-md-5">
+        <div class="new__service py-3 py-md-5">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 col-lg-4">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-bowling-ball"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>01</p>
                                     <h4>Soup</h4>
                                 </div>
@@ -232,13 +234,13 @@
                             <p>Lorem ipsum dolor sit amet contetur adipisicing elit vitae. Labore repellendus!</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mt-3 pt-2 mt-lg-0 pt-lg-0">
+                    <div class="col-md-6 col-lg-4 mt-3 pt-2 mt-md-0 pt-md-0">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-cocktail"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>02</p>
                                     <h4>Drink</h4>
                                 </div>
@@ -248,11 +250,11 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mt-3 pt-2 mt-lg-0 pt-lg-0">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-pizza-slice"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>03</p>
                                     <h4>Pizza</h4>
                                 </div>
@@ -262,11 +264,11 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mt-3 pt-2">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-bread-slice"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>04</p>
                                     <h4>Breakfast</h4>
                                 </div>
@@ -276,11 +278,11 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mt-3 pt-2">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-sun"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>05</p>
                                     <h4>Lunch</h4>
                                 </div>
@@ -290,11 +292,11 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mt-3 pt-2">
                         <div class="new__item">
-                            <div class="new__icon">
+                            <div class="new__icon pb-3">
                                 <div>
                                     <i class="fa fa-moon"></i>
                                 </div>
-                                <div class="pb-3">
+                                <div>
                                     <p>06</p>
                                     <h4>Dinner</h4>
                                 </div>
@@ -374,12 +376,9 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <!-- CLOSE BUTTON VIDEO -->
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <!-- 16:9 aspect ratio -->
-                            <!-- KHUNG VIDEO KHI CLICK BUTTON -->
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
                                     allow=""></iframe>

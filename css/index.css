@@ -22,11 +22,10 @@ $$ |       \____$$\  \____$$\       $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |
 
 *{
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
+    color: #fff;
+    padding: 0;
+    margin: 0;
 }   
-    
 body,html{
     margin: 0;
     padding: 0;
@@ -49,13 +48,15 @@ h5{
 }
 a, a:hover{
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 p,span{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
     padding: 0;
     margin: 0;
 }
-
 ul{
     padding: 0;
 }
@@ -100,12 +101,15 @@ ul li {
     text-align: left;
     padding-top: 210px;
 }
+.Diner__carousel__details p{
+    font-size: 16px;
+}
 .icon__change__color{
     padding-left: 15px;
     border: none;
     background: none;
 }
-.icon__change__color i:last-of-type {
+.icon__change__color i:last-of-type{
     font-size: 30px;
 }
 .btn-style{
@@ -185,9 +189,7 @@ ul li {
 }
 .Diner__about p{
     color: rgba(22, 28, 45, 0.7);
-    font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
 }
 .about__more{
     background-color: #ff6600;
@@ -258,11 +260,11 @@ ul li {
 }
 .Diner__about__dark p{
     color: #C2D0E1;
+    font-weight: 400;
 }
 .Diner__about__dark a{
     color: #eeeeee;
 }
-
 
 /* WHAT'S NEW */
 .Diner__new{
@@ -300,7 +302,6 @@ ul li {
 }
 .new__info p{
     color: #ffc600;
-    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -348,15 +349,13 @@ ul li {
 }
 .new__item p{
     color: rgba(22, 28, 45, 0.7);
-    font-size: 18px;
     font-weight: 400;
     word-spacing: 1.5px;
 }
 .new__icon{
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 30px;
-    
+    gap: 30px; 
 }
 /* Diner__new__dark */
 .Diner__new__dark .new__menu{
@@ -381,6 +380,7 @@ ul li {
     background-color: #ff6600;
     color: #fff;
 }
+
 /* DINER DELI */
 .Diner__deli{
     background-image: url(../image/banner2.jpg);
@@ -832,11 +832,19 @@ ul li {
 .Diner__footer{
     background: black;
 }
+.Diner__footer p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #a5a2a1;
+}
+
 .Diner__header__logo a{
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .Diner__footer__social a{
     margin-right: 10px;
@@ -850,7 +858,13 @@ ul li {
     border-radius: 8px;
     transition: 0.3s;
 }
-.Diner__Usefull a:hover, .Dinner__More a:hover,.footer__bottom__infor a:hover,.Diner__header__logo a:hover {
+.Diner__Usefull a, .Dinner__More a{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #a5a2a1;
+}
+.Diner__Usefull a:hover, .Dinner__More a:hover,.footer__bottom__infor a:hover{
     color: #ff6600;
 }
 .Diner__footer__social a:hover{
@@ -931,7 +945,7 @@ form input[type="email"]{
     border-radius: 50%;
     position: fixed;
     right: 30px;
-    bottom: 20px;
+    bottom: 50px;
     opacity: 0;
     visibility: hidden;
 }
@@ -939,8 +953,6 @@ form input[type="email"]{
     visibility: visible;
     opacity: 1;
 }
-
-
 
 
 
@@ -958,8 +970,6 @@ form input[type="email"]{
 }
 
 
-
-
 /* RIPPLE ANIMATION */
 @keyframes ripple {
     0% {
@@ -972,16 +982,27 @@ form input[type="email"]{
   }
 
 /* RESPONSIVE */
-@media screen and (max-width:1080px){
+@media screen and (max-width:1200px){
     .title h3{
         font-size: 32px;
         line-height: 40px;
+    }
+    .Diner__carousel h3{
+        font-size: 48px;
+        line-height: 58px;
     }
     .deli__countup__dark .countup__item{
         margin-top: -50px;
     }
 }
 @media screen and (max-width:992px){
+    .Diner__carousel h3{
+        font-size: 44px;
+        line-height: 53px;
+    }
+    .new__item h4{
+        font-size: 20px;
+    }
     .deli.title h3{
         color: white;
         font-size: 40px;
@@ -1011,8 +1032,14 @@ form input[type="email"]{
         text-align: center;
     }
 }
-
 @media screen and (max-width:768px){
+    .Diner__carousel h3{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .Diner__carousel{
+        min-height: 600px;
+    }
     .deli.title h3{
         color: white;
         font-size: 40px;
@@ -1030,7 +1057,6 @@ form input[type="email"]{
     .deli__countup{
         margin-top: 0px;
     }
-
 }
 @media screen and (max-width:576px) {
     .title h3{
@@ -1040,6 +1066,13 @@ form input[type="email"]{
     .title h6{
         font-size: 18px;
         line-height: 20px;
+    }
+    body p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .Diner__carousel{
+        min-height: 600px;
     }
     .deli.title h3{
         color: white;
@@ -1057,9 +1090,29 @@ form input[type="email"]{
     .footer__top .col-6{
         padding:15px 15px;
     }
-
 }
 @media screen and (max-width:480px) {
+    .title h3{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .title h6{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .Diner__carousel h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .Diner__carousel{
+        min-height: 450px;
+    }
+    .Diner__carousel__details{
+        padding-top: 150px;
+    }
+    .btn-style{
+        padding: 10px 21px;
+    }
     .deli.title button{
         margin: 0px 0px;
         font-size: 16px;
@@ -1069,6 +1122,10 @@ form input[type="email"]{
     }
 }
 @media screen and (max-width:345px) {
+    .title h3{
+        font-size: 24px;
+        line-height: 34px;
+    }
     .deli.title h3{
         color: white;
         font-size: 26px;
@@ -1076,7 +1133,7 @@ form input[type="email"]{
         font-weight: 600;
         padding: 0 0px;
         max-width: 100%;
-    }
+    }  
     .deli.title button{
         margin: 5px 10px;
         font-size: 16px;
