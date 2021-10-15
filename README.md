@@ -25,6 +25,7 @@ Hà Thị Ngọc Anh
 ### Hà Thị Ngọc Anh
 - Tải ảnh và cập nhật source ảnh
 - Làm news, about us
+- Nút backtotop
 
 ## Quy trình thực hiện:
 
